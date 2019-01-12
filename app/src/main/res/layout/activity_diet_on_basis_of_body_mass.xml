@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.suraj.gymguid.DietOnBasisOfBodyMass">
+
+<!--
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+
+            android:text="Muscle Mass"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="25dp"
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/lbs">
+        <EditText
+
+            android:id="@+id/mass"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:ems="10"
+            android:hint="Enter Mass in LBS"
+            android:inputType="number"
+          />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="83dp"
+        android:layout_height="35dp"
+    android:layout_marginLeft="30dp"
+        android:text="LBS"
+        android:textSize="20dp" />
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonWeightLoss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:onClick="getMuscleMassDisplayWeightloss"
+            android:text="wieght loss" />
+
+        <Button
+            android:id="@+id/buttonMuscleGain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="getMuscleMassDisplayMuscleGain"
+            android:text="Muscle Gain" />
+
+    </LinearLayout>
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="360dp"
+            android:layout_height="55dp"
+
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Protien"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:text="Carbs"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:text="Fats"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/protienIntake"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_column="1"
+                    android:text=""
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/carbsIntake"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_column="2"
+                    android:text=""
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/fatsIntake"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_column="3"
+                    android:text=""
+                    android:textAlignment="center" />
+            </TableRow>
+
+
+        </TableLayout>
+-->
+
+       <!-- <Button
+            android:id="@+id/fruitstable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="displayFruits"
+            android:text="Fruits"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/vegetabletable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="displayVegetables"
+            android:text="Vegetables"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fruitstable" />
+
+        <Button
+            android:id="@+id/dairytable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="displayDairy"
+            android:text="Dairy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vegetabletable" />
+
+        <Button
+            android:id="@+id/protientble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="displayProtien"
+            android:text="Protiens"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dairytable"
+            app:layout_constraintVertical_bias="0.0" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:id="@+id/mmass"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Muscle Mass"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="25dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lbs"
+        android:layout_below="@+id/mmass"
+        android:layout_marginTop="20dp">
+
+        <EditText
+
+            android:id="@+id/mass"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:layout_marginLeft="30dp"
+            android:ems="10"
+            android:hint="Enter Mass in LBS"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="83dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:text="LBS"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_below="@id/lbs"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/buttonWeightLoss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:onClick="getMuscleMassDisplayWeightloss"
+            android:text="wieght loss" />
+
+        <Button
+            android:id="@+id/buttonMuscleGain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="getMuscleMassDisplayMuscleGain"
+            android:text="Muscle Gain" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/buttons"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="30dp"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Protien"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:background="@drawable/border"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="Carbs"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:background="@drawable/border"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:text="Fats"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/protienIntake"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:text=""
+                android:background="@drawable/border"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/carbsIntake"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:text=""
+                android:background="@drawable/border"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/fatsIntake"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_column="3"
+                android:text=""
+                android:background="@drawable/border"
+                android:textAlignment="center" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
